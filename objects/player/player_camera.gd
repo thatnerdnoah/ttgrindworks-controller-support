@@ -6,7 +6,8 @@ class_name PlayerCamera
 @onready var player: Player = NodeGlobals.get_ancestor_of_type(self, Player)
 @onready var camera: Camera3D = %Camera
 
-var controller_camera_input = Vector2.ZERO
+# Vector2 needed to handle continuous joystick camera movement
+static var controller_camera_input = Vector2.ZERO
 
 var fov: float:
 	get: return camera.fov
@@ -36,6 +37,9 @@ func _unhandled_input(event) -> void:
 				controller_camera_input.x = axis_value
 			JOY_AXIS_RIGHT_Y:  # Pitch (Up/Down)
 				controller_camera_input.y = axis_value
+				
+		if abs(controller_camera_input.x) < dead_zone and abs(controller_camera_input.y) < dead_zone:
+			controller_camera_input = Vector2.ZERO
 	
 
 func _process(_delta: float) -> void:
@@ -43,9 +47,10 @@ func _process(_delta: float) -> void:
 	var sensitivity = SaveFileService.settings_file.camera_sensitivity * 175  # Adjust speed as needed
 
 	# Apply continuous rotation based on joystick input
-	rotation_degrees.y -= controller_camera_input.x * sensitivity * _delta
-	var new_pitch = rotation_degrees.x - (controller_camera_input.y * sensitivity * _delta)
-	rotation_degrees.x = clamp(new_pitch, -89, 89)
+	if controller_camera_input != Vector2.ZERO:
+		rotation_degrees.y -= controller_camera_input.x * sensitivity * _delta
+		var new_pitch = rotation_degrees.x - (controller_camera_input.y * sensitivity * _delta)
+		rotation_degrees.x = clamp(new_pitch, -89, 89)
 
 func make_current() -> void:
 	camera.make_current()

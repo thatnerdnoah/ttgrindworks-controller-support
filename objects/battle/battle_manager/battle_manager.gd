@@ -35,6 +35,7 @@ var illegal_moves : Array[Script] = []
 var boss_battle := false
 var current_round := 0
 var has_moved : Array[Node3D] = []
+var movement = SaveFileService.settings_file.camera_sensitivity * 200
 
 ## Signals
 signal s_focus_char(character: Node3D)
@@ -56,6 +57,8 @@ func start_battle(cog_array: Array[Cog], battlenode: BattleNode):
 	cogs = cog_array
 	battle_node = battlenode
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	# Reset controller_camera_input
+	PlayerCamera.controller_camera_input = Vector2.ZERO
 	battle_ui.s_turn_complete.connect(gags_selected)
 	
 	# Record the base stats for all combatants

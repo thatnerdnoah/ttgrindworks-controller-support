@@ -2,13 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhpyaq34n8ykp"
+uid="uid://dcrt1qd1qyfkj"
 path="res://.godot/imported/sword_tt_t_chr_avt_acc_pac_woodenSword.png-bd43e827bd47424ff0013fc08fb29366.ctex"
 metadata={
 "vram_texture": false
-}
-generator_parameters={
-"md5": "f883c2e023a83cd00fd8bc6a972266a0"
 }
 
 [deps]
@@ -19,7 +16,7 @@ dest_files=["res://.godot/imported/sword_tt_t_chr_avt_acc_pac_woodenSword.png-bd
 [params]
 
 compress/mode=3
-compress/high_quality=false
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

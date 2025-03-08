@@ -2,26 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://64imno2syur0"
-path.s3tc="res://.godot/imported/mint_elevator_CFOCeiling2.png-a933dc583d5b3b4e4f38701f59d1a8ff.s3tc.ctex"
-path.etc2="res://.godot/imported/mint_elevator_CFOCeiling2.png-a933dc583d5b3b4e4f38701f59d1a8ff.etc2.ctex"
+uid="uid://i7bygv6kg0e1"
+path="res://.godot/imported/mint_elevator_CFOCeiling2.png-a933dc583d5b3b4e4f38701f59d1a8ff.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
-"vram_texture": true
-}
-generator_parameters={
-"md5": "1e1c449793c9775c3e0e30c67ed71b32"
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://models/props/facility_objects/transporters/mint_elevator/mint_elevator_CFOCeiling2.png"
-dest_files=["res://.godot/imported/mint_elevator_CFOCeiling2.png-a933dc583d5b3b4e4f38701f59d1a8ff.s3tc.ctex", "res://.godot/imported/mint_elevator_CFOCeiling2.png-a933dc583d5b3b4e4f38701f59d1a8ff.etc2.ctex"]
+dest_files=["res://.godot/imported/mint_elevator_CFOCeiling2.png-a933dc583d5b3b4e4f38701f59d1a8ff.ctex"]
 
 [params]
 
-compress/mode=2
-compress/high_quality=false
+compress/mode=3
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
