@@ -1,5 +1,14 @@
-# Toontown: The Grindworks
+ # Toontown: The Grindworks - Controller Support
 
+## A note from the fork owner:
+
+This fork of Toontown: The Grindworks aims to add native controller support for the game. If you are playing on a Steam Deck or ROG Ally, the game should work natively without needing to map buttons in the Steam interface.
+
+Please see the Issues tab of this repository to view any bugs or issues with the controller support. The game otherwise should work without any issue.
+
+Feel free to open a new issue if any further issues are spotted.
+
+## Original details of Toontown: The Grindworks
 
 This is a single-player game based on Disney's Toontown Online developed with the Godot Engine.
 
