@@ -4,9 +4,9 @@
 
 This fork of Toontown: The Grindworks aims to add native controller support for the game. If you are playing on a Steam Deck or ROG Ally, the game should work natively without needing to map buttons in the Steam interface.
 
-Please see the Issues tab of this repository to view any bugs or issues with the controller support. The game otherwise should work without any issue.
+Please see the Issues tab of this repository to view any bugs or issues with controller support. The game otherwise should work without any issue - you can switch back and forth between controller/mouse and keyboard seamlessly.
 
-Feel free to open a new issue if any further issues are spotted.
+Feel free to open a new issue if any further bugs are spotted or if you have any feedback.
 
 ## Original details of Toontown: The Grindworks
 
