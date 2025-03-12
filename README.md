@@ -9,10 +9,10 @@ Please see the Issues tab of this repository to view any bugs or issues with con
 Feel free to open a new issue if any further bugs are spotted or if you have any feedback.
 
 # Controls (Xbox layout, can be translated to PlayStation controllers)
-Left stick - moves character
-Right stick - moves camera/cursor
-A Button - Jump
-Right Bumper - Emulated left mouse click
+* Left stick - moves character
+* Right stick - moves camera/cursor
+* A Button - Jump
+* Right Bumper - Emulated left mouse click
 
 ## Original details of Toontown: The Grindworks
 
